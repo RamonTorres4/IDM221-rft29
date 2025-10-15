@@ -1,6 +1,9 @@
 <!-- Header Code -->
 <!-- Navigation -->
 <nav>
+    <div id="logo">
+        <p><img src="#" alt="Logo"></p>
+    </div>
 <ul>
     <li><a href="/portfolio.html">Portfolio</a></li>
     <li><a href="/case-studies.html">Case Studies</a></li>
@@ -11,12 +14,74 @@
 </ul>
 </nav>
 
-<!-- Section -->
+<!-- Section Template-->
 <section>
     <h2>This is a heading</h2>
     <img src="#" alt="#">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam deleniti soluta accusantium, recusandae in doloribus corrupti blanditiis aliquid. Necessitatibus consectetur fugit hic obcaecati nobis eveniet, in eligendi est dolorum adipisci.</p>
 </section>
+
+<!-- Images Section -->
+
+<!-- Apply to all images to only load image needed -->
+ <img src="" alt="" loading="lazy">
+
+<!-- Image Grid -->
+<div class="row">
+  <div class="column">
+    <img src="#">
+    <img src="#">
+    <img src="#">
+    <img src="#">
+    <img src="#">
+    <img src="#">
+    <img src="#">
+  </div>
+</div>
+
+<!-- Image Gallery -->
+<div class="responsive">
+  <div class="gallery">
+      <img src="#" alt="#">
+  </div>
+</div>
+
+<!-- Slideshow -->
+<section>
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="#" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="#" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="#" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+
+</section>
+
 
 <!-- Table -->
 <table>
