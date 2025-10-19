@@ -56,3 +56,5 @@ This is my initial sitemap.
     - Email Icon
     - Social Media Icons
     - Arrows
+
+### Shift + ALT + F formats documents
