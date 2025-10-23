@@ -16,16 +16,11 @@
 
 body{
     background-color: #F5F5F5;
-	/* margin: auto */
 }
 
 nav{
     background-color: #8f8f8f;
 }
-
-/* section{
-	margin: 5%
-} */
 
 h1, h2, h3, h4{
     font-family: 'Noto Sans', helvetica,  sans-serif;
@@ -58,7 +53,7 @@ p{
     font-family: 'Noto Sans', helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 a{
@@ -80,8 +75,4 @@ th, tr{
     font-family: 'Noto Sans', helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
-}
-
-footer{
-	background-color: #8f8f8f;
 }

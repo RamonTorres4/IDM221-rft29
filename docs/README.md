@@ -58,3 +58,9 @@ This is my initial sitemap.
     - Arrows
 
 ### Shift + ALT + F formats documents
+
+### Google Font
+https://fonts.google.com/noto/specimen/Noto+Sans?preview.text=This%20is%20an%20H1
+
+### REM to PX Converter
+https://codebeautify.org/rem-to-px-converter
