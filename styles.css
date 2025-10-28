@@ -1,3 +1,9 @@
+:root{
+--primary-color: #EFF5EC;
+--secondary-color: #2E605D;
+--tertiary-color: #fff; 
+}
+
 @font-face {
     font-family: 'Noto Sans';
     src: url('fonts/NotoSans-Regular.woff2') format('woff2');
@@ -15,12 +21,24 @@
 }
 
 body{
-    background-color: #F5F5F5;
+    background-color: var(--primary-color)
 	/* margin: auto */
 }
 
 nav{
-    background-color: #8f8f8f;
+    background-color: var(--secondary-color);
+}
+
+nav>ul{
+    list-style: none;
+}
+
+footer>ul{
+    list-style: none;
+}
+
+footer{
+	background-color: var(--secondary-color);
 }
 
 /* section{
@@ -80,8 +98,4 @@ tr, th{
     font-family: 'Noto Sans', helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
-}
-
-footer{
-	background-color: #8f8f8f;
 }

@@ -68,3 +68,10 @@ https://codebeautify.org/rem-to-px-converter
 ###
 Image Sizes
 - Horizontal 322 x 230, or something around that.
+
+Color Selection
+- #CFC1B4
+- #FFFFFF
+- #C19C82
+- #EBD0BF
+- #111111 
