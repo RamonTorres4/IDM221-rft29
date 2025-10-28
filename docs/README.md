@@ -64,3 +64,7 @@ https://fonts.google.com/noto/specimen/Noto+Sans?preview.text=This%20is%20an%20H
 
 ### REM to PX Converter
 https://codebeautify.org/rem-to-px-converter
+
+###
+Image Sizes
+- Horizontal 322 x 230, or something around that.
