@@ -1,7 +1,7 @@
 :root{
 --primary-color: #EFF5EC;
 --secondary-color: #2E605D;
---tertiary-color: #fff; 
+--tertiary-color: #fff;
 }
 
 @font-face {
@@ -25,6 +25,11 @@ body{
 	/* margin: auto */
 }
 
+img{
+    height: auto;
+    width: 100%;
+}
+
 nav{
     background-color: var(--secondary-color);
 }
@@ -33,12 +38,22 @@ nav>ul{
     list-style: none;
 }
 
-footer>ul{
-    list-style: none;
+nav>ul>li>a{
+    color: #fff;
+    /* This controls the color of the navigation text */
 }
 
 footer{
 	background-color: var(--secondary-color);
+}
+
+footer>ul{
+    list-style: none;
+}
+
+footer>ul>li>a{
+    color: #fff;
+    /* This controls the color of the footer text */
 }
 
 /* section{
