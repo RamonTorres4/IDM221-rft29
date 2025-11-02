@@ -1,116 +1,151 @@
-:root{
---primary-color: #EFF5EC;
---secondary-color: #2E605D;
---tertiary-color: #fff;
+    :root{
+    --primary-color: #EFF5EC;
+    --secondary-color: #2E605D;
+    --tertiary-color: #97a1a2;
+    --4th-color: #ffd873;
+    --5th-color: #363636;
+    --rythym: 1.5rem;
+    }
+
+    @font-face {
+        font-family: 'Noto Sans';
+        src: url('fonts/NotoSans-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Noto Sans';
+        src: url('fonts/NotoSans-Italic.woff2') format('woff2');
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    *{
+        margin: 0;
+        padding: 0%;
+    }
+
+    body{
+        background-color: var(--primary-color)
+    }
+
+    main{
+        margin: 1rem;
+    }
+
+    img{
+        height: auto;
+        width: 100%;
+
+    }
+
+    img.logonav{
+        Width: 20%;
+        Height: 20%;
+    }
+
+    nav{
+        background-color: var(--secondary-color);
+        text-align: right;
+
+    }
+
+    nav>ul{
+        list-style: none;
+    }
+
+    nav>ul>li>a{
+        color: #fff;
+        /* This controls the color of the navigation text */
+    }
+nav>ul>li>a>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
+    footer{
+        background-color: var(--secondary-color);
+        text-align: center;
+    }
 
-@font-face {
-    font-family: 'Noto Sans';
-    src: url('fonts/NotoSans-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+    footer>ul{
+        list-style: none;
+    }
 
-@font-face {
-    font-family: 'Noto Sans';
-    src: url('fonts/NotoSans-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
+    footer>ul>li>a{
+        color: #fff;
+        /* This controls the color of the footer text */
+    }
 
-body{
-    background-color: var(--primary-color)
-	/* margin: auto */
-}
+img.logofooter{
+        Width: 20%;
+        Height: 20%;
+    }
 
-img{
-    height: auto;
-    width: 100%;
-}
+    /* section{
+        margin: 5%
+    } */
 
-nav{
-    background-color: var(--secondary-color);
-}
+    h1, h2, h3, h4{
+        font-family: 'Noto Sans', helvetica,  sans-serif;
+        margin: 0;
+        
+    }
 
-nav>ul{
-    list-style: none;
-}
+    h1{
+        font-size: 3rem;
+        /* font-size: clamp(32px, 3rem, 48px); */
+        font-weight: 900;
+        line-height: 1.2;   
+        letter-spacing: -0.1rem;
+        
+    }
 
-nav>ul>li>a{
-    color: #fff;
-    /* This controls the color of the navigation text */
-}
+    h2{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.4;
+        letter-spacing: -0.1rem;
+        margin-top: 1.8rem;
 
-footer{
-	background-color: var(--secondary-color);
-}
+    }
 
-footer>ul{
-    list-style: none;
-}
+    h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -0.1rem;
+        margin-top: 1.5rem;
+    }
 
-footer>ul>li>a{
-    color: #fff;
-    /* This controls the color of the footer text */
-}
+    p{
+        font-family: 'Noto Sans', helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-top: 0.9rem;
+    }
 
-/* section{
-	margin: 5%
-} */
+    a{
+        color: var(--4th-color);
+    }
 
-h1, h2, h3, h4{
-    font-family: 'Noto Sans', helvetica,  sans-serif;
-}
+    a:hover{
+        color: var(--4th-color);
+        /* text-shadow:  4px 8px red; */
+    }
 
-h1{
-    font-size: 3rem;
-    /* font-size: clamp(32px, 3rem, 48px); */
-    font-weight: 900;
-    line-height: 1.8;
-    letter-spacing: -0.1rem;
-    
-}
+    li{
+        font-family: 'Noto Sans', helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
 
-h2{
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.4;
-    letter-spacing: -0.1rem;
-
-}
-
-h3{
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-}
-
-p{
-    font-family: 'Noto Sans', helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.4;
-}
-
-a{
-    color: blue;
-}
-
-a:hover{
-    color: red
-    /* text-shadow:  4px 8px red; */
-}
-
-li{
-    font-family: 'Noto Sans', helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-}
-
-tr, th{
-    font-family: 'Noto Sans', helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-}
+    tr, th{
+        font-family: 'Noto Sans', helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
