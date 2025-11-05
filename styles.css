@@ -4,7 +4,7 @@
     --tertiary-color: #97a1a2;
     --4th-color: #ffd873;
     --5th-color: #363636;
-    --rythym: 1.5rem;
+    /* --rythym: margin-top: 1.5rem; */
     }
 
     @font-face {
@@ -34,22 +34,19 @@
 
     main{
         margin: 1rem;
+        padding: 1rem 0rem;
     }
 
     img{
         height: auto;
         width: 100%;
-
     }
 
-    img.logonav{
-        Width: 20%;
-        Height: 20%;
-    }
-
+ 
     nav{
         background-color: var(--secondary-color);
         text-align: right;
+        padding-bottom: 5%;
 
     }
 
@@ -57,19 +54,39 @@
         list-style: none;
     }
 
-    nav>ul>li>a{
-        color: #fff;
-        /* This controls the color of the navigation text */
+    nav>ul>li{
+        margin: 0rem 1rem;
+
     }
-nav>ul>li>a>img{
+
+    nav>ul>li>a{
+        /* This controls the color of the navigation text */
+        color: #fff;
+        /* text-decoration: none; */
+        /* background-color: var(--5th-color); */
+        /* border: 15px var(--5th-color);
+        border-radius: 10px;
+        padding: .2rem; */
+    }
+    
+    nav>ul>li>a>img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-}
+    }
+    
+   img.logonav{
+        Width: 20%;
+        padding-top: 5%;
+        /* This controls the logo in the navigation */
+    }
+
+
     footer{
         background-color: var(--secondary-color);
         text-align: center;
+        padding-bottom: 5%;
     }
 
     footer>ul{
@@ -81,14 +98,10 @@ nav>ul>li>a>img{
         /* This controls the color of the footer text */
     }
 
-img.logofooter{
-        Width: 20%;
-        Height: 20%;
-    }
-
-    /* section{
-        margin: 5%
-    } */
+    img.logofooter{
+            Width: 20%;
+            margin-top: 5%
+        }
 
     h1, h2, h3, h4{
         font-family: 'Noto Sans', helvetica,  sans-serif;
@@ -121,6 +134,22 @@ img.logofooter{
         margin-top: 1.5rem;
     }
 
+    /* h3+img{
+        margin-top: .5rem;
+    } */
+
+    h1 + p{
+        margin-top: 0.3rem;
+    }
+
+    h2 + p{
+        margin-top: 0.3rem;
+    }
+
+    h3 + p{
+        margin-top: 0.3rem;
+    }
+
     p{
         font-family: 'Noto Sans', helvetica, sans-serif;
         font-weight: 400;
@@ -129,23 +158,110 @@ img.logofooter{
         margin-top: 0.9rem;
     }
 
-    a{
-        color: var(--4th-color);
-    }
-
     a:hover{
         color: var(--4th-color);
         /* text-shadow:  4px 8px red; */
     }
 
-    li{
-        font-family: 'Noto Sans', helvetica, sans-serif;
-        font-weight: 400;
-        font-size: 1.1rem;
+    a:active{
+        color: var(--4th-color);
     }
 
-    tr, th{
+    ul>li{
         font-family: 'Noto Sans', helvetica, sans-serif;
         font-weight: 400;
         font-size: 1.1rem;
+        list-style: none;
+        line-height: 1.7;
+    }
+
+    ul>li>a{
+        color: black;
+        
+    }
+
+    ol{
+    margin-top: .5rem;
+    }
+
+    ol>li{
+        font-family: 'Noto Sans', helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+        list-style: none; 
+        line-height: 1.7;
+        
+    }
+
+    /* This section is for styling the table on the hobbies page */
+
+    table, th, td{
+        /* border: 1px solid black; */
+        font-family: 'Noto Sans', helvetica, sans-serif;
+        font-size: .9rem;
+        border-collapse: collapse;
+        /* overflow: hidden; */
+    }
+
+    table{
+        width: 100%;
+        font-weight: 400;
+        border-spacing: .5rem;
+    }
+
+    th, td{
+        padding: .3rem .9rem;
+    }
+
+    th{
+        text-align: left;
+        padding: 1.2rem;
+    }
+
+    td{
+        border-spacing: .2rem;
+    }
+
+    td>img{
+        width: 1.2rem;
+    }
+
+    .mana{
+        /* This is to adjust the spacing between the mana symbols */
+        margin-left: 0.2rem;
+    }
+
+    div>img{
+        margin-top: 1rem;
+    }
+
+    #anchor{
+        margin-top: 1.5rem;
+    }
+
+    div.bullets>ul>li{
+        /* background-color: #2E605D; */
+        list-style: decimal;
+        margin-left: 3rem;
+        line-height: 1.8rem;
+    }
+
+    div.bullets>ol>li{
+        list-style: decimal;
+        margin-left: 3rem;
+        line-height: 2.3rem;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .imggal{
+        /* This controls the container for divs that contain divs with images */
+        margin-top: 0.8rem;
+    }
+
+    .center{
+        /* This controls the middle row in tables */
+        width: 30%;
     }
