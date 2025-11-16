@@ -173,3 +173,79 @@ nav>ul>li>a>img{
     height: 5rem;
 }
 
+header{
+    background-color: red;
+    height: 1.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    label{
+        cursor: pointer;
+        height: 20px;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 26px;
+        z-index: 1000;
+
+        span{
+            background-color: blue;
+            border-radius: 2px;
+            display: block;
+            height: 3px;
+            width: 100%;
+
+            &:nth-child(1){
+                top: 0;
+            }
+
+            &:nth-child(2){
+                top: 8px;
+            }
+
+            &:nth-child(3){
+                top: 16px;
+            }
+        }
+    }
+    nav{
+        background-color: gray;
+        height: 100vh;
+        margin-block-start: 1.5rem;
+        width: 300px;
+        right: -300px;
+        z-index: 1000
+        transition right 0.3s ease;
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li{
+                padding: 0;
+
+                a{
+                    color: white;
+
+                    &:hover{
+                        background-color: yellow;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        .nav-toggle:checked ~ nav{
+            right: 0;
+        }
+
+        .nav-toggle:checked ~ .nav-toggle-label span :nth-child(1){
+            transform: rotate 45deg;
+
+        }
+    }
+    
+}

@@ -75,3 +75,6 @@ Color Selection
 - #C19C82
 - #EBD0BF
 - #111111 
+
+Screen Size
+- 340-580 small screen
