@@ -140,6 +140,12 @@ nav>ul>li>a>img{
         font-family: 'Noto Sans', helvetica, sans-serif;
         font-weight: 400;
         font-size: 1.1rem;
+        list-style: none;
+    }
+
+    li>img{
+        /* This controls the sizing of the mana symbols */
+        width: 1.2rem;
     }
 
     tr, th{
@@ -173,7 +179,7 @@ nav>ul>li>a>img{
     height: 5rem;
 }
 
-header{
+/* header{
     background-color: red;
     height: 1.5rem;
     width: 100%;
@@ -248,4 +254,4 @@ header{
         }
     }
     
-}
+} */
